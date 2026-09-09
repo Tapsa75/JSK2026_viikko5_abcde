@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koulutuskauppa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Koulutuskauppa</h1>
+
+        <nav>
+            <a href="index.html">Etusivu</a>
+            <a href="about.html">Tietoa palvelusta</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Opiskele verkossa omaan tahtiin</h2>
+
+                <p>
+                    Koulutuskauppa tarjoaa verkkokoulutuksia eri aihealueista.
+                    Koulutuksia voi opiskella joustavasti verkossa omaan tahtiin.
+                </p>
+
+                <a class="button"
+                   href="https://www.syo.fi/koulutuskauppa/"
+                   target="_blank">
+                    Tutustu Koulutuskauppaan
+                </a>
+                <button class="button" onclick="naytaViesti()">
+    Näytä tervehdys
+</button>
+            </div>
+
+            <img
+                src="images/koulutus.jpg"
+                alt="Henkilö opiskelemassa verkkokoulutusta tietokoneella">
+        </section>
+
+
+        <section>
+            <h2>Koulutuksen etuja</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Joustava opiskelu</h3>
+                    <p>Voit opiskella omaan tahtiin silloin, kun sinulle parhaiten sopii.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Verkossa</h3>
+                    <p>Koulutukset ovat käytettävissä verkossa paikasta riippumatta.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Monipuolinen valikoima</h3>
+                    <p>Koulutuksia löytyy useista eri aiheista ja eri osaamistasoille.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section>
+            <h2>Esimerkkejä koulutusaiheista</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aihe</th>
+                        <th>Kohderyhmä</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Markkinointi</td>
+                        <td>Yrittäjät ja työntekijät</td>
+                    </tr>
+                    <tr>
+                        <td>Taloushallinto</td>
+                        <td>Yrittäjät ja taloushallinnon osaajat</td>
+                    </tr>
+                    <tr>
+                        <td>Tekoäly</td>
+                        <td>Kaikki aiheesta kiinnostuneet</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+<!-- VIIKKOTEHTÄVÄ 4: API -->
+
+<section class="api-section">
+    <h2>Inspiroidu opiskeluun</h2>
+
+    <p>
+        Hae kolme satunnaista neuvoa avoimesta rajapinnasta.
+    </p>
+
+    <button id="haeNappi" class="button">
+        Hae inspiraatiota
+    </button>
+
+    <div id="apiTulos" class="api-result">
+        Vastaukset ilmestyvät tähän.
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <p>Harjoitustyö – Johdatus sovelluskehitykseen 2026</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+
+</html>
